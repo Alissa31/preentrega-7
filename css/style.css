@@ -160,6 +160,23 @@ main section p strong {
     text-align: center;
 }
 
+.btn.btn-primary {
+    background-color: #261c17;
+    border-color: #261c17;
+    color: #F5E1C9;
+    padding: 0.5rem 1rem;
+}
+
+.btn.btn-primary:active {
+    background-color: #574035;
+    border-color: #574035;
+    color: #261c17;
+}
+
+.btn.btn-primary:hover {
+    text-decoration: underline;
+}
+
 .escritorio {
     display: block;
 }
