@@ -155,7 +155,7 @@ aside {
 }
 
 main section p strong {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 600;
     text-align: center;
 }
@@ -177,11 +177,6 @@ main section p strong {
     text-decoration: underline;
 }
 
-section p strong {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
-}
 
 .escritorio {
     display: block;
