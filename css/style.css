@@ -188,6 +188,24 @@ main section p strong {
     text-decoration: underline;
 }
 
+.imagenes-menu {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.imagenes-menu .carousel {
+    width: min(700px, 100%);
+}
+
+.imagenes-menu img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
 
 .escritorio {
     display: block;
