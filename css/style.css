@@ -1,4 +1,14 @@
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: #F5E1C9;
     font-family: 'Poppins', sans-serif;
@@ -48,6 +58,15 @@ header img {
     display: block;
     max-width: 7.5rem;
     height: auto;
+}
+
+header .nav {
+    width: 100%;
+}
+
+header .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 footer {
@@ -302,10 +321,29 @@ section {
     header {
         flex-direction: column;
         text-align: center;
+        padding: 0.625rem;
+    }
+
+    main {
+        padding: 1rem 0.75rem;
+    }
+
+    main > h1 {
+        font-size: 1.75rem;
+        line-height: 1.2;
+    }
+
+    .aside {
+        width: 100%;
+    }
+
+    section {
+        gap: 1rem;
     }
 
     .nav ul {
         justify-content: center;
+        gap: 0.25rem;
     }
 
     footer {
@@ -314,6 +352,27 @@ section {
 
     .menu-productos {
         grid-template-columns: 1fr;
+        width: 100%;
+        padding: 1rem 0.75rem;
+        gap: 1rem;
+    }
+
+    .menu-categoria {
+        padding: 1rem;
+    }
+
+    .menu-categoria ul {
+        padding-left: 1.25rem;
+    }
+
+    .imagenes-menu {
+        margin-top: 0;
+        gap: 1rem;
+    }
+
+    .tarjeta {
+        width: 100%;
+        margin: 0;
     }
 }
 
