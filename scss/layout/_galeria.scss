@@ -4,15 +4,13 @@
 
 
 .galeria {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
+    @include grid(1fr, 0, auto, 
         "titulo"
         "square"
         "vertical"
         "square2"
-        "horizontal";
+        "horizontal"
+    );
     width: 100%;
 
 h2 {
@@ -76,7 +74,7 @@ figure img {
     grid-area: horizontal;
 }
 
-@media (max-width: 48rem) {
+@include tablet-telefono {
     .escritorio {
         display: none;
     }
@@ -141,7 +139,7 @@ figure img {
     }
 }
 
-@media (min-width: 1024px) {
+@include escritorio {
     .galeria {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 17.5rem 17.5rem 17.5rem;

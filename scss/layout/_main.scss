@@ -87,9 +87,7 @@ h2 {
 }
 
 .menu-productos {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.25rem;
+    @include grid(repeat(2, minmax(0, 1fr)), 1.25rem);
     max-width: 1100px;
     margin: 0 auto;
     padding: 1.25rem;
@@ -119,14 +117,5 @@ ul {
 .bloque {
     display: block;
     margin-bottom: 1.25rem;
-}
-
-.tarjeta {
-    background-color: $color-tarjetabg-category;
-    color: $color-overallfont-button;
-    padding: 0.625rem;
-    width: min(300px, 100%);
-    border-radius: 0.3125rem;
-    margin: 0.625rem;
 }
 

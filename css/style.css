@@ -222,6 +222,7 @@ aside {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.25rem;
+  grid-template-rows: auto;
   max-width: 1100px;
   margin: 0 auto;
   padding: 1.25rem;
@@ -253,15 +254,6 @@ aside {
   margin-bottom: 1.25rem;
 }
 
-.tarjeta {
-  background-color: #e3b498;
-  color: #261c17;
-  padding: 0.625rem;
-  width: min(300px, 100%);
-  border-radius: 0.3125rem;
-  margin: 0.625rem;
-}
-
 footer p {
   margin: 0;
   font-size: 0.875rem;
@@ -286,6 +278,7 @@ footer a img {
 .galeria {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 0;
   grid-template-rows: auto;
   grid-template-areas: "titulo" "square" "vertical" "square2" "horizontal";
   width: 100%;
@@ -405,6 +398,14 @@ footer a img {
     grid-template-areas: "titulo titulo" "vertical square" "vertical square2" "horizontal horizontal";
     gap: 1rem;
   }
+}
+.tarjeta {
+  background-color: #e3b498;
+  color: #261c17;
+  padding: 0.625rem;
+  width: min(300px, 100%);
+  border-radius: 0.3125rem;
+  margin: 0.625rem;
 }
 
 /*# sourceMappingURL=style.css.map */

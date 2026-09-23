@@ -1,0 +1,13 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+
+.tarjeta {
+    background-color: $color-tarjetabg-category;
+    color: $color-overallfont-button;
+    padding: 0.625rem;
+    width: min(300px, 100%);
+    border-radius: 0.3125rem;
+    margin: 0.625rem;
+}
