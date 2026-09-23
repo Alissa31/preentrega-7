@@ -1,0 +1,51 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+%fuente-principal {
+    font-family: $fontfamily;
+}
+
+%fuente-h2 {
+    @extend %fuente-principal;
+    font-weight: 600;
+}
+
+%fuente-h3 {
+    @extend %fuente-principal;
+    font-weight: 500;
+}
+
+%contenedor-principal {
+    width: 100%;
+    max-width: 1100px;
+}
+
+%espaciado-principal {
+    @include flex(null, null, null, null, 1.25rem);
+    padding: 1.25rem;
+}
+
+%sombra-focus {
+    box-shadow: 0.3125rem 0.3125rem 0.625rem $color-overallfont-button;
+}
+
+%barra {
+    background-color: $color-headerfooterbg;
+    background-image: $bg-navbar;
+    background-size: cover;
+    background-position: center;
+    color: $color-pagebga-lighttext;
+    padding: 0.625rem 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
+    @include flex(null, center, space-between, null, 1.25rem);
+}
+
+%footer {
+    background-color: $color-headerfooterbg;
+    color: $color-pagebga-lighttext;
+    text-align: center;
+    @include flex(null, center, center, wrap, 1.25rem);
+    padding: 0.9375rem 1.25rem;
+}
+

@@ -1,0 +1,62 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+
+header {
+    @extend %barra;
+    img {
+    display: block;
+    max-width: 7.5rem;
+    height: auto;
+}
+    .nav { 
+    width: 100%;
+
+        .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+    ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0.625rem 0;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+    li a {
+    color: $color-navbartext-togglerborder;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+    li a:hover {
+    opacity: 0.8;
+    text-decoration:underline;
+}   
+    li a:visited {
+    color: $color-visitednavbartext;
+}
+    li a.active {
+    font-weight: 700;
+    text-decoration: underline;
+    color: $color-activetext;
+    text-decoration:dotted underline;
+}
+}
+.navbar-toggler {
+    border-color: $color-navbartext-togglerborder;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+}
+
+
+
+
+

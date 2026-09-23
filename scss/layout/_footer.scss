@@ -1,0 +1,26 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+footer {
+    @extend %footer;
+
+    p {
+        margin: 0;
+        font-size: 0.875rem;
+        color: $color-pagebga-lighttext;
+    }
+
+    ul {
+        @include flex(row, center, center, null, 1.25rem);
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    a img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

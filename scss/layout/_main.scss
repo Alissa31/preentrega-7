@@ -1,0 +1,132 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+main section p strong {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+aside {
+    color: $color-overallfont-button;
+    width: 100%;
+    max-width: 900px;
+}
+
+.aside {
+    background-color: $color-asidebg-visitedlinks;
+    color: $color-pagebga-lighttext;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.3125rem;
+    margin: 0.625rem auto;
+ p {
+    background-color: $color-asideparagraphbg;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: $color-overallfont-button;
+}
+ p:hover {
+    text-decoration: underline;
+}
+p:active {
+    color: $color-activetext;
+    text-decoration: dotted underline;
+}
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
+}}
+
+.btn.btn-primary {
+    background-color: $color-overallfont-button;
+    border-color: $color-overallfont-button;
+    color: $color-pagebga-lighttext;
+    padding: 0.5rem 1rem;
+
+.btn.btn-primary:active {
+    background-color: $color-activebuttonbg-border;
+    border-color: $color-activebuttonbg-border;
+    color: $color-overallfont-button;
+}
+
+.btn.btn-primary:hover {
+    text-decoration: underline;
+}}
+
+
+.imagenes-menu {
+    grid-column: 1 / -1;
+    @include flex(row, null, center, wrap, 1.25rem);
+    margin-top: 1.25rem;
+
+ .carousel {
+    width: min(700px, 100%);
+}
+ img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}}
+
+
+.escritorio {
+    display: block;
+}
+
+.movil {
+    display: none;
+}
+
+.menu-productos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+
+.menu-productos > h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.menu-categoria {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 1.25rem;
+    background-color: $color-tarjetabg-category;
+    border-radius: 0.3125rem;
+ h2 {
+    margin-top: 0;
+}
+ul {
+    margin-bottom: 0;
+}}
+
+
+.bloque {
+    display: block;
+    margin-bottom: 1.25rem;
+}
+
+.tarjeta {
+    background-color: $color-tarjetabg-category;
+    color: $color-overallfont-button;
+    padding: 0.625rem;
+    width: min(300px, 100%);
+    border-radius: 0.3125rem;
+    margin: 0.625rem;
+}
+

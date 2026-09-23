@@ -1,0 +1,37 @@
+// flex
+@mixin flex($direction, $align, $justify, $wrap, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+
+// grid
+
+@mixin grid($columns, $gutters, $rows, $template-areas, $area) {
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gutters;
+    grid-column: $columns;
+    grid-template-rows: $rows;
+    grid-template-areas: $template-areas;
+    grid-area: $area;
+}
+
+// escritorio
+ @mixin escritorio {
+    @media (min-width: 1024px) {
+        @content; 
+
+}
+ }
+
+
+// tablet telefono
+ @mixin tablet-telefono {
+    @media (max-width: 48rem) {
+        @content; 
+    }
+ }
