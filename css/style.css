@@ -120,7 +120,6 @@ header .nav li a:visited {
 }
 header .nav li a.active {
   font-weight: 700;
-  text-decoration: underline;
   color: #fbebd7;
   text-decoration: dotted underline;
 }
@@ -183,12 +182,12 @@ aside {
   color: #F5E1C9;
   padding: 0.5rem 1rem;
 }
-.btn.btn-primary .btn.btn-primary:active {
+.btn.btn-primary:active {
   background-color: #574035;
   border-color: #574035;
   color: #261c17;
 }
-.btn.btn-primary .btn.btn-primary:hover {
+.btn.btn-primary:hover {
   text-decoration: underline;
 }
 

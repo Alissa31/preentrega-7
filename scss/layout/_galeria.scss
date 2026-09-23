@@ -45,11 +45,12 @@ figure {
     margin: 0;
     display: flex;
     flex-direction: column;
-}
 
-figure:focus {
-    box-shadow: $sombra;
-    outline-offset: 0.3125rem;
+    &:focus {
+        box-shadow: $sombra;
+        outline-offset: 0.3125rem;
+    }
+
 }
 
 figure img {

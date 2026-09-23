@@ -27,24 +27,28 @@ aside {
     text-align: center;
     border-radius: 0.3125rem;
     margin: 0.625rem auto;
- p {
-    background-color: $color-asideparagraphbg;
-    margin: 0;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    color: $color-overallfont-button;
+    p {
+        background-color: $color-asideparagraphbg;
+        margin: 0;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        color: $color-overallfont-button;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:active {
+            color: $color-activetext;
+            text-decoration: dotted underline;
+        }
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.625rem;
+    }
 }
- p:hover {
-    text-decoration: underline;
-}
-p:active {
-    color: $color-activetext;
-    text-decoration: dotted underline;
-}
-h2 {
-    font-size: 1.25rem;
-    margin-bottom: 0.625rem;
-}}
 
 .btn.btn-primary {
     background-color: $color-overallfont-button;
@@ -52,15 +56,16 @@ h2 {
     color: $color-pagebga-lighttext;
     padding: 0.5rem 1rem;
 
-.btn.btn-primary:active {
-    background-color: $color-activebuttonbg-border;
-    border-color: $color-activebuttonbg-border;
-    color: $color-overallfont-button;
-}
+    &:active {
+        background-color: $color-activebuttonbg-border;
+        border-color: $color-activebuttonbg-border;
+        color: $color-overallfont-button;
+    }
 
-.btn.btn-primary:hover {
-    text-decoration: underline;
-}}
+    &:hover {
+        text-decoration: underline;
+    }
+}
 
 
 .imagenes-menu {
