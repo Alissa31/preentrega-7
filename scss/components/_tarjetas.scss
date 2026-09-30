@@ -4,7 +4,7 @@
 
 
 .tarjeta {
-    background-color: $color-tarjetabg-category;
+    background: linear-gradient($color-tarjetabg-category, $color-navbartext-togglerborder, $color-tarjetabg-category);
     color: $color-overallfont-button;
     padding: 0.625rem;
     width: min(300px, 100%);

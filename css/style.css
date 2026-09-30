@@ -114,6 +114,7 @@ header .nav li a {
 header .nav li a:hover {
   opacity: 0.8;
   text-decoration: underline;
+  transform: scale(1.05);
 }
 header .nav li a:visited {
   color: #baad9c;
@@ -122,6 +123,7 @@ header .nav li a.active {
   font-weight: 700;
   color: #fbebd7;
   text-decoration: dotted underline;
+  transform: scale(1);
 }
 header .navbar-toggler {
   border-color: #f5dfc4;
@@ -166,10 +168,12 @@ aside {
 }
 .aside p:hover {
   text-decoration: underline;
+  transform: scale(1.02);
 }
 .aside p:active {
   color: #fbebd7;
   text-decoration: dotted underline;
+  transform: scale(0.9);
 }
 .aside h2 {
   font-size: 1.25rem;
@@ -399,7 +403,7 @@ footer a img {
   }
 }
 .tarjeta {
-  background-color: #e3b498;
+  background: linear-gradient(#e3b498, #f5dfc4, #e3b498);
   color: #261c17;
   padding: 0.625rem;
   width: min(300px, 100%);

@@ -36,11 +36,13 @@ aside {
 
         &:hover {
             text-decoration: underline;
+            transform: scale(1.02);
         }
 
         &:active {
             color: $color-activetext;
             text-decoration: dotted underline;
+            transform: scale(0.9);
         }
     }
 
