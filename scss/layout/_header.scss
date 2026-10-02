@@ -61,6 +61,19 @@ header {
 }
 }
 
+@include tablet-telefono {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 0.625rem;
+    }
+
+    .nav ul {
+        justify-content: center;
+        gap: 0.25rem;
+    }
+}
+
 
 
 

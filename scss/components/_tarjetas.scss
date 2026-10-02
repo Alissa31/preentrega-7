@@ -11,3 +11,10 @@
     border-radius: 0.3125rem;
     margin: 0.625rem;
 }
+
+@include tablet-telefono {
+    .tarjeta {
+        width: 100%;
+        margin: 0;
+    }
+}

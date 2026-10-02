@@ -24,3 +24,9 @@ footer {
         height: 1.5rem;
     }
 }
+
+@include tablet-telefono {
+    footer {
+        flex-direction: column;
+    }
+}

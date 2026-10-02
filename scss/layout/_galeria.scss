@@ -83,61 +83,6 @@ figure img {
     .movil {
         display: block;
     }
-
-    header {
-        flex-direction: column;
-        text-align: center;
-        padding: 0.625rem;
-    }
-
-    main {
-        padding: 1rem 0.75rem;
-     h1 {
-        font-size: 1.75rem;
-        line-height: 1.2;
-    }}
-
-    .aside {
-        width: 100%;
-    }
-
-    section {
-        gap: 1rem;
-    }
-
-    .nav ul {
-        justify-content: center;
-        gap: 0.25rem;
-    }
-
-    footer {
-        flex-direction: column;
-    }
-
-    .menu-productos {
-        grid-template-columns: 1fr;
-        width: 100%;
-        padding: 1rem 0.75rem;
-        gap: 1rem;
-    }
-
-    .menu-categoria {
-        padding: 1rem;
-    }
-
-    .menu-categoria ul {
-        padding-left: 1.25rem;
-    }
-
-    .imagenes-menu {
-        margin-top: 0;
-        gap: 1rem;
-    }
-
-    .tarjeta {
-        width: 100%;
-        margin: 0;
-    }
 }
 
 @include escritorio {
