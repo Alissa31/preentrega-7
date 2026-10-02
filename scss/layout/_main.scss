@@ -1,12 +1,13 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixin" as *;
+@use "sass:math";
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.25rem;
     animation: entrada-suave 650ms ease-out both;
+    padding: $espaciado-base + 0.25rem;
 }
 
 @keyframes entrada-suave {
@@ -49,7 +50,7 @@ aside {
     p {
         background-color: $color-asideparagraphbg;
         margin: 0;
-        padding: 0.5rem 1rem;
+        padding: math.div($espaciado-base, 2) $espaciado-base;
         border-radius: 0.25rem;
         color: $color-overallfont-button;
 
@@ -91,8 +92,8 @@ aside {
 
 .imagenes-menu {
     grid-column: 1 / -1;
-    @include flex(row, null, center, wrap, 1.25rem);
-    margin-top: 1.25rem;
+    @include flex(row, null, center, wrap, $espaciado-base * 1.25);
+    margin-top: $espaciado-base * 1.25;
 
  .carousel {
     width: min(700px, 100%);
@@ -113,10 +114,10 @@ aside {
 }
 
 .menu-productos {
-    @include grid(repeat(2, minmax(0, 1fr)), 1.25rem);
+    @include grid(repeat(2, minmax(0, 1fr)), $espaciado-base * 1.25);
     max-width: 1100px;
     margin: 0 auto;
-    padding: 1.25rem;
+    padding: $espaciado-base * 1.25;
 }
 
 .menu-productos > h1 {
@@ -129,7 +130,7 @@ aside {
     width: 100%;
     max-width: none;
     margin: 0;
-    padding: 1.25rem;
+    padding: $espaciado-base * 1.25;
     background-color: $color-tarjetabg-category;
     border-radius: 0.3125rem;
  h2 {
